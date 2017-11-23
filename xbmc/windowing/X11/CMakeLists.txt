@@ -1,3 +1,4 @@
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpermissive")
 set(SOURCES GLContextEGL.cpp
             GLContextGLX.cpp
             GLContext.cpp
