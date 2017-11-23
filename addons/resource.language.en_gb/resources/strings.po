@@ -19787,3 +19787,15 @@ msgstr ""
 msgctxt "#39010"
 msgid "Select sort method"
 msgstr ""
+
+#: system/settings/settings.xml
+msgctxt "#99998"
+msgid "Allow hardware acceleration - MFC"
+msgstr ""
+
+#. Description of setting "Videos -> Playback -> Allow hardware acceleration (MFC)" with label #99999
+#: system/settings/settings.xml
+msgctxt "#99999"
+msgid "Enable hardware video decode using MFC decoder."
+msgstr ""
+

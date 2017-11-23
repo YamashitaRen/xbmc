@@ -153,7 +153,8 @@ CDVDVideoCodec* CDVDFactoryCodec::CreateVideoCodec(CDVDStreamInfo &hint, CProces
 #elif defined(HAS_MMAL)
     pCodec = OpenCodec(new CMMALVideo(processInfo), hint, options);
 #elif defined(HAS_MFC)
-    pCodec = OpenCodec(new CDVDVideoCodecMFC(processInfo), hint, options);
+    if (CSettings::GetInstance().GetBool("videoplayer.usemfc"))
+      pCodec = OpenCodec(new CDVDVideoCodecMFC(processInfo), hint, options);
 #endif
     if (pCodec)
       return pCodec;
